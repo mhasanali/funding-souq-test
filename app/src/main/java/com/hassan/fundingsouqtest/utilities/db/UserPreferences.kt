@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 private val Context.dataStore : DataStore<Preferences> by preferencesDataStore(name = "user_pref")
-class UserPreferences {
+class UserPreferences(context: Context) {
 
     companion object{
     }
