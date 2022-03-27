@@ -2,4 +2,12 @@
     <string name="app_name">FundingSouqTest</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in_message">Hello There! \nPlease log in to continue</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="other_details_here">Other details here - Leaving implementation as its
+        redundant and too long</string>
+    <string name="enter_last_name">Enter your last name</string>
+    <string name="enter_first_name">Enter your first name</string>
+    <string name="enter_mobile_number">Enter mobile number</string>
+    <string name="enter_personal_id">Enter Personal ID</string>
 </resources>
