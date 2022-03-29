@@ -10,7 +10,7 @@ object NetworkConstants{
 
                 const val authUsername = ""
                 const val authPassword = ""
-                const val baseURL = ""
+                const val baseURL = "https://my-json-server.typicode.com/"
                 const val requestTimeoutInSeconds: Long = 120
                 val basicAuth = Credentials.basic(authUsername, authPassword)
 
