@@ -12,8 +12,6 @@ import androidx.fragment.app.viewModels
 
 @AndroidEntryPoint
 class LoginFragment : Fragment() {
-    private val loginViewModel by viewModels<AuthViewModel>()
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

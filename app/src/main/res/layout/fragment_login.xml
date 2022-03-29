@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:bind="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <data>
         <import type="android.view.View"/>
@@ -14,7 +13,7 @@
             android:layout_height="match_parent"
             android:id="@+id/parent_layout_login_activity">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvLoginText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -100,8 +99,10 @@
                 android:id="@+id/progress_bar_login"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tilEmail" />
 
 
             <com.google.android.material.button.MaterialButton
@@ -116,7 +117,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tilPassword"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:id="@+id/tvFingerPrint"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

@@ -45,7 +45,7 @@ dependencies {
 	def hilt_version = "2.38.1"
 	def lifecycle_version = "2.4.1"
 	def arch_version = "2.1.0"
-	def fragment_ktx_version = "1.4.1"
+	def nav_version = "2.4.1"
 
 	implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 	implementation 'androidx.core:core-ktx:1.7.0'
@@ -80,26 +80,28 @@ dependencies {
 	implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutine_version"
 	implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine_version"
 
+	//hilt
 	implementation "com.google.dagger:hilt-android:$hilt_version"
 	kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
 	kapt 'androidx.hilt:hilt-compiler:1.0.0'
 
-	implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version")
+//	//lifecycle
+//	implementation("androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version")
+//	implementation("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
+//
+//	// optional - helpers for implementing LifecycleOwner in a Service
+//	implementation("androidx.lifecycle:lifecycle-service:$lifecycle_version")
+//
+//	// optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
+//	implementation("androidx.lifecycle:lifecycle-process:$lifecycle_version")
+//	// optional - ReactiveStreams support for LiveData
+//	implementation("androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version")
+//	// optional - Test helpers for LiveData
+//	testImplementation("androidx.arch.core:core-testing:$arch_version")
 
-	// Annotation processor
-//    kapt("androidx.lifecycle:lifecycle-compiler:$lifecycle_version")
-	// alternately - if using Java8, use the following instead of lifecycle-compiler
-	implementation("androidx.lifecycle:lifecycle-common-java8:$lifecycle_version")
-
-	// optional - helpers for implementing LifecycleOwner in a Service
-	implementation("androidx.lifecycle:lifecycle-service:$lifecycle_version")
-
-	// optional - ProcessLifecycleOwner provides a lifecycle for the whole application process
-	implementation("androidx.lifecycle:lifecycle-process:$lifecycle_version")
-	// optional - ReactiveStreams support for LiveData
-	implementation("androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycle_version")
-	// optional - Test helpers for LiveData
-	testImplementation("androidx.arch.core:core-testing:$arch_version")
+	// Kotlin
+	implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
+	implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
 
 
 
